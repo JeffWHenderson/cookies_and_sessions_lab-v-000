@@ -4,6 +4,7 @@ class ProductsController < ApplicationController
 
   def add
     cart << params[:product]
+    render "/index"
     # @product = Product.find(params[:id])
     # redirect_to @product
   end
