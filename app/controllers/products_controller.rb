@@ -3,7 +3,6 @@ class ProductsController < ApplicationController
   end
 
   def add
-    raise params.inspect
     cart << params[:product]
     # @product = Product.find(params[:id])
     # redirect_to @product
